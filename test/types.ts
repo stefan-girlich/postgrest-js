@@ -93,6 +93,7 @@ export interface Database {
           id: number
           message: string | null
           username: string
+          numeric_value: number
         }
         Insert: {
           channel_id: number
@@ -160,6 +161,7 @@ export interface Database {
           data: Json | null
           status: Database['public']['Enums']['user_status'] | null
           username: string
+          numeric_value: number
         }
         Insert: {
           age_range?: unknown | null
